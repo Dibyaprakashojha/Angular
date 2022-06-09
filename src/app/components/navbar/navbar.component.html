@@ -1,0 +1,49 @@
+<!-- <a [routerLink]="['/home']" routerLinkActive="true">Home</a>
+<a routerLink="/products" routerLinkActive="true">Products</a> -->
+
+<mat-toolbar color="primary" class="mat-elevation-z6"
+  >Harrys Corner
+  <span>
+    <mat-icon class="home-icon">home</mat-icon>
+  </span>
+  <button
+    mat-button
+    color="basic"
+    [routerLink]="['/home']"
+    routerLinkActive="true"
+  >
+    Home
+  </button>
+  <button
+    mat-button
+    color="basic"
+    routerLink="/products"
+    routerLinkActive="true"
+  >
+    Products
+  </button>
+  <span [ngClass]="'filler'"></span>
+  <button
+    mat-raised-button
+    color="warn"
+    class="mat-elevation-admin"
+    [routerLink]="['/admin']"
+    routerLinkActive="true"
+  >
+    Admin
+  </button>
+  <button
+    mat-raised-button
+    color="warn"
+    class="mat-elevation-signup"
+    [routerLink]="['/signup']"
+    routerLinkActive="true"
+  >
+    Signup
+  </button>
+</mat-toolbar>
+
+<mat-tab-group>
+  <mat-tab label="Tab 1">Content 1</mat-tab>
+  <mat-tab label="Tab 2">Content 2</mat-tab>
+</mat-tab-group>

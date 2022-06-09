@@ -1,0 +1,33 @@
+<div>
+  <mat-card *ngFor="let product of products">
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>{{ product.name }}</mat-card-title>
+      <mat-card-subtitle>{{ product.brand }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content> {{ product.category }} </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="onSubmit(product)">
+        View More
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<!-- <h2>Product List</h2>
+<div class="container">
+  <ul>
+    <li
+      *ngFor="let product of products"
+      [ngStyle]="{ 'list-style-type': 'none' }"
+    >
+      <h3>Product Id: {{ product.productId }}</h3>
+      <h3>Name: {{ product.name }}</h3>
+      <h3>Brand: {{ product.brand }}</h3>
+      <h3>Category: {{ product.category }}</h3>
+      <h3>Price: {{ product.price | currency: "INR" }}</h3>
+      <button (click)="onSubmit(product)">View Details</button> -->
+<!-- <a [routerLink]="['/product-details', product.productId]">View Details</a> -->
+<!-- </li>
+  </ul>
+</div> -->
